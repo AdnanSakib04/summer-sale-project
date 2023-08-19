@@ -28,67 +28,73 @@
 
   <main class="bg-[#F8F8F8]">
     <section class="w-full lg:w-[1440px] mx-auto border-red-500 border mb-20">
-      <div class="flex  md:flex-row flex-col-reverse items-center md:items-start">
+      <div class="flex  md:flex-row flex-col-reverse items-center md:items-start justify-evenly">
         <!-- card container  -->
-        <div class="flex flex-col">
+        <div class="flex flex-col ">
           <!--kitchen card container -->
           <div>
             <h1 class="text-5xl font-semibold mt-28 mb-8">Kitchenware</h1>
             <div class="grid grid-cols-1  lg:grid-cols-3 gap-6 justify-center">
               <!-- card 1 kitchen-->
-              <div class="card w-[342px] bg-[#FFF] shadow-xl">
-                <figure class="px-10 pt-10 bg-[#1111110D] m-4">
-                  <img class="   h-[200px]" src="./images/prod1.png" alt="" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                  </div>
-                  <h2 class="card-title font-semibold text-xl">K. Accessories</h2>
-                  <p class="text-xl text-[#11111180]">39.00 TK</p>
+              <div>
+                <div onclick="addToTotal(this)" class="card w-[342px] bg-[#FFF] shadow-xl">
+                  <figure class="px-10 pt-10 bg-[#1111110D] m-4">
+                    <img class="   h-[200px]" src="./images/prod1.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                    </div>
+                    <h2 class="card-title font-semibold text-xl">K. Accessories</h2>
+                    <p class="text-xl text-[#11111180]">39.00 TK</p>
 
+                  </div>
                 </div>
               </div>
 
               <!-- card 2 kitchen-->
-              <div class="card  w-[342px] bg-[#FFF] shadow-xl">
-                <figure class="px-10 pt-10 bg-[#1111110D] m-4">
-                  <img class="   h-[200px]" src="./images/prod2.png" alt="" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+              <div>
+                <div onclick="addToTotal(this)" class="card w-[342px] bg-[#FFF] shadow-xl">
+                  <figure class="px-10 pt-10 bg-[#1111110D] m-4">
+                    <img class="   h-[200px]" src="./images/prod2.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                    </div>
+                    <h2 class="card-title font-semibold text-xl">K. Accessories</h2>
+                    <p class="text-xl text-[#11111180]">25.00 TK</p>
                   </div>
-                  <h2 class="card-title font-semibold text-xl">K. Accessories</h2>
-                  <p class="text-xl text-[#11111180]">25.00 TK</p>
                 </div>
               </div>
 
               <!-- card 3 kitchen-->
-              <div class="card  w-[342px] bg-[#FFF] shadow-xl">
-                <figure class="px-10 pt-10 bg-[#1111110D] m-4">
-                  <img class="   h-[200px]" src="./images/prod3.png" alt="" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+              <div>
+                <div onclick="addToTotal(this)" class="card w-[342px] bg-[#FFF] shadow-xl">
+                  <figure class="px-10 pt-10 bg-[#1111110D] m-4">
+                    <img class="   h-[200px]" src="./images/prod3.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                    </div>
+                    <h2 class="card-title font-semibold text-xl">Home Cooker</h2>
+                    <p class="text-xl text-[#11111180]">49.00 TK</p>
                   </div>
-                  <h2 class="card-title font-semibold text-xl">Home Cooker</h2>
-                  <p class="text-xl text-[#11111180]">49.00 TK</p>
-                </div>
 
+                </div>
               </div>
 
 
@@ -96,87 +102,93 @@
           </div>
 
 
-           <!--Sportswear card container -->
-           <div>
+          <!--Sportswear card container -->
+          <div>
             <h1 class="text-5xl font-semibold mt-16 mb-8">Sportswear</h1>
             <div class="grid grid-cols-1  lg:grid-cols-3 gap-6 justify-center">
               <!-- card 1 sports-->
-              <div class="card w-[342px] bg-[#FFF] shadow-xl">
-                <figure class="px-10 pt-10 bg-[#1111110D] m-4">
-                  <img class="   h-[200px]" src="./images/prod4.png" alt="" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                  </div>
-                  <h2 class="card-title font-semibold text-xl">Sports Back Cap</h2>
-                  <p class="text-xl text-[#11111180]">49.00 TK</p>
+              <div>
+                <div onclick="addToTotal(this)" class="card w-[342px] bg-[#FFF] shadow-xl">
+                  <figure class="px-10 pt-10 bg-[#1111110D] m-4">
+                    <img class="   h-[200px]" src="./images/prod4.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                    </div>
+                    <h2 class="card-title font-semibold text-xl">Sports Back Cap</h2>
+                    <p class="text-xl text-[#11111180]">49.00 TK</p>
 
+                  </div>
                 </div>
               </div>
 
               <!-- card 2 sports-->
-              <div class="card  w-[342px] bg-[#FFF] shadow-xl">
-                <figure class="px-10 pt-10 bg-[#1111110D] m-4">
-                  <img class="   h-[200px]" src="./images/prod5.png" alt="" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+              <div>
+                <div onclick="addToTotal(this)" class="card w-[342px] bg-[#FFF] shadow-xl">
+                  <figure class="px-10 pt-10 bg-[#1111110D] m-4">
+                    <img class="   h-[200px]" src="./images/prod5.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                    </div>
+                    <h2 class="card-title font-semibold text-xl">Full Jersey Set</h2>
+                    <p class="text-xl text-[#11111180]">69.00 TK</p>
                   </div>
-                  <h2 class="card-title font-semibold text-xl">Full Jersey Set</h2>
-                  <p class="text-xl text-[#11111180]">69.00 TK</p>
                 </div>
               </div>
 
               <!-- card 3 sport-->
-              <div class="card  w-[342px] bg-[#FFF] shadow-xl">
-                <figure class="px-10 pt-10 bg-[#1111110D] m-4">
-                  <img class="   h-[200px]" src="./images/prod6.png" alt="" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+              <div>
+                <div onclick="addToTotal(this)" class="card w-[342px] bg-[#FFF] shadow-xl">
+                  <figure class="px-10 pt-10 bg-[#1111110D] m-4">
+                    <img class="   h-[200px]" src="./images/prod6.png" alt="" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                    </div>
+                    <h2 class="card-title font-semibold text-xl">Sports cates</h2>
+                    <p class="text-xl text-[#11111180]">159.00 TK</p>
                   </div>
-                  <h2 class="card-title font-semibold text-xl">Sports cates</h2>
-                  <p class="text-xl text-[#11111180]">159.00 TK</p>
-                </div>
 
+                </div>
               </div>
 
-             
+
 
 
             </div>
           </div>
         </div>
 
-         <!-- coupon and purchase -->
-         <div class="flex flex-col gap-12 mt-10 md:mt-48 mx-auto">
+        <!-- coupon and purchase -->
+        <div class="flex flex-col gap-12 mt-10 md:mt-48 mx-auto">
           <!-- coupon container -->
           <div class="w-[342px] h-[148px] bg-[#FFF] rounded-lg">
-            
+
             <div class="">
               <label class="label">
                 <span class="label-text text-2xl font-semibold ml-7 mt-2 mb-1">Have coupon?</span>
               </label>
               <label class="input-group w-[56px] ml-7">
-                
-                <input type="text " placeholder="Coupon code" class="input border border-[#11111126]" />
-                <span class="bg-[#E527B2] text-white font-semibold">Apply</span>
-                <!-- <button class="bg-[#E527B2] w-[]">Apply</button> -->
+
+                <input type="text" id="coupon-field" placeholder="Coupon code" class="input border border-[#11111126]" />
+                <span onclick="discount()" disabled id="btn-apply" class="btn bg-[#E527B2] text-white font-semibold">Apply</span>
+                <!-- <button onclick="discount()" disabled id="btn-apply" class="bg-[#E527B2] text-white font-semibold">Apply</button> -->
               </label>
             </div>
 
@@ -186,27 +198,40 @@
           <div class="w-[342px]  bg-[#FFF] rounded-lg p-4">
 
             <hr class="mb-8 mt-4">
-            <ol>
+            <ol id="order-list" class="list-decimal p-7 text-2xl font-medium" >
             </ol>
-            <h3 class="text-2xl font-medium mb-2">Total price: <span class="text-[#11111180]"> <span>0.00</span> TK</span></h3>
-            <h3 class="text-2xl font-medium mb-2">Discount: <span class="text-[#11111180]"> <span>0.00</span> TK</span></h3>
-            <h3 class="text-2xl font-medium mb-2">Total: <span class="text-[#11111180]"> <span>0.00</span> TK</span></h3>
+            <h3 class="text-2xl font-medium mb-2">Total price: <span class="text-[#11111180]"> <span
+                  id="total-price">0.00</span> TK</span></h3>
+            <h3 class="text-2xl font-medium mb-2">Discount: <span class="text-[#11111180]"> <span
+                  id="discount">0.00</span> TK</span></h3>
+            <h3 class="text-2xl font-medium mb-2">Total: <span class="text-[#11111180]"> <span id="total">0.00</span>
+                TK</span></h3>
 
             <hr class="mb-8 mt-4">
 
             <div class="absolute mt-0">
-              <button class="btn bg-[#E527B2] w-[310px] text-white rounded-lg">Make Purchase</button>
+              <button id="btn-purchase" disabled class="btn bg-[#E527B2] w-[310px] text-white rounded-lg">Make Purchase</button>
+              
 
             </div>
           </div>
 
-         </div>
+        </div>
 
       </div>
     </section>
 
+    <div>
+      <ol class="list-decimal pl-5">
+        <li>Item in list…</li>
+        <li>Item in list…</li>
+        <li>Item in list…</li>
+     </ol>
+    </div>
+
 
   </main>
+  <script src="./js/cart-and-coupon.js"></script>
 </body>
 
 </html>
