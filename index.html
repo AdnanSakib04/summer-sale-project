@@ -27,14 +27,14 @@
   </header>
 
   <main class="bg-[#F8F8F8]">
-    <section class="w-[1440px] mx-auto border-red-500 border">
-      <div class="flex flex-col md:flex-row ">
+    <section class="w-full lg:w-[1440px] mx-auto border-red-500 border mb-20">
+      <div class="flex  md:flex-row flex-col-reverse items-center md:items-start">
         <!-- card container  -->
         <div class="flex flex-col">
           <!--kitchen card container -->
           <div>
             <h1 class="text-5xl font-semibold mt-28 mb-8">Kitchenware</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+            <div class="grid grid-cols-1  lg:grid-cols-3 gap-6 justify-center">
               <!-- card 1 kitchen-->
               <div class="card w-[342px] bg-[#FFF] shadow-xl">
                 <figure class="px-10 pt-10 bg-[#1111110D] m-4">
@@ -91,11 +91,6 @@
 
               </div>
 
-              <!-- coupon and purchase -->
-              <div>
-
-              </div>
-
 
             </div>
           </div>
@@ -104,7 +99,7 @@
            <!--Sportswear card container -->
            <div>
             <h1 class="text-5xl font-semibold mt-16 mb-8">Sportswear</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+            <div class="grid grid-cols-1  lg:grid-cols-3 gap-6 justify-center">
               <!-- card 1 sports-->
               <div class="card w-[342px] bg-[#FFF] shadow-xl">
                 <figure class="px-10 pt-10 bg-[#1111110D] m-4">
@@ -161,15 +156,51 @@
 
               </div>
 
-              <!-- coupon and purchase -->
-              <div>
-
-              </div>
+             
 
 
             </div>
           </div>
         </div>
+
+         <!-- coupon and purchase -->
+         <div class="flex flex-col gap-12 mt-10 md:mt-48 mx-auto">
+          <!-- coupon container -->
+          <div class="w-[342px] h-[148px] bg-[#FFF] rounded-lg">
+            
+            <div class="">
+              <label class="label">
+                <span class="label-text text-2xl font-semibold ml-7 mt-2 mb-1">Have coupon?</span>
+              </label>
+              <label class="input-group w-[56px] ml-7">
+                
+                <input type="text " placeholder="Coupon code" class="input border border-[#11111126]" />
+                <span class="bg-[#E527B2] text-white font-semibold">Apply</span>
+                <!-- <button class="bg-[#E527B2] w-[]">Apply</button> -->
+              </label>
+            </div>
+
+          </div>
+
+          <!-- cart container -->
+          <div class="w-[342px]  bg-[#FFF] rounded-lg p-4">
+
+            <hr class="mb-8 mt-4">
+            <ol>
+            </ol>
+            <h3 class="text-2xl font-medium mb-2">Total price: <span class="text-[#11111180]"> <span>0.00</span> TK</span></h3>
+            <h3 class="text-2xl font-medium mb-2">Discount: <span class="text-[#11111180]"> <span>0.00</span> TK</span></h3>
+            <h3 class="text-2xl font-medium mb-2">Total: <span class="text-[#11111180]"> <span>0.00</span> TK</span></h3>
+
+            <hr class="mb-8 mt-4">
+
+            <div class="absolute mt-0">
+              <button class="btn bg-[#E527B2] w-[310px] text-white rounded-lg">Make Purchase</button>
+
+            </div>
+          </div>
+
+         </div>
 
       </div>
     </section>
