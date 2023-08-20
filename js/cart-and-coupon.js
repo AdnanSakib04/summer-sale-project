@@ -82,3 +82,7 @@ function discount() {
         totalElement.innerText = newTotal;
     }
     }
+
+    function goHome(){
+        location.href = "index.html";
+    }

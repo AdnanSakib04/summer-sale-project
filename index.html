@@ -186,8 +186,10 @@
               </label>
               <label class="input-group w-[56px] ml-7">
 
-                <input type="text" id="coupon-field" placeholder="Coupon code" class="input border border-[#11111126]" />
-                <span onclick="discount()" disabled id="btn-apply" class="btn bg-[#E527B2] text-white font-semibold">Apply</span>
+                <input type="text" id="coupon-field" placeholder="Coupon code"
+                  class="input border border-[#11111126]" />
+                <span onclick="discount()" disabled id="btn-apply"
+                  class="btn bg-[#E527B2] text-white font-semibold">Apply</span>
                 <!-- <button onclick="discount()" disabled id="btn-apply" class="bg-[#E527B2] text-white font-semibold">Apply</button> -->
               </label>
             </div>
@@ -198,7 +200,7 @@
           <div class="w-[342px]  bg-[#FFF] rounded-lg p-4">
 
             <hr class="mb-8 mt-4">
-            <ol id="order-list" class="list-decimal p-7 text-2xl font-medium" >
+            <ol id="order-list" class="list-decimal p-7 text-2xl font-medium">
             </ol>
             <h3 class="text-2xl font-medium mb-2">Total price: <span class="text-[#11111180]"> <span
                   id="total-price">0.00</span> TK</span></h3>
@@ -210,9 +212,26 @@
             <hr class="mb-8 mt-4">
 
             <div class="absolute mt-0">
-              <button id="btn-purchase" disabled class="btn bg-[#E527B2] w-[310px] text-white rounded-lg">Make Purchase</button>
-              
+              <button id="btn-purchase" onclick="my_modal_4.showModal()" disabled class="btn bg-[#E527B2] w-[310px] text-white rounded-lg">Make
+                Purchase</button>
+                <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box w-11/12 ">
+                    <div class="text-center py-12">
+                      <img class=" mx-auto" src="./images/congo.png" alt="">
+                    <h3 class="font-bold text-4xl mt-8">Congratulations</h3>
+                    <p class="py-4 text-xl text-[#11111180] mb-4">You have purchased the product</p>
+                    <div class="">
+                      <!-- if there is a button, it will close the modal -->
+                      <!-- <button class="btn">Close</button> -->
+                      <button onclick="goHome()"  class="btn bg-[#E527B2]  text-white rounded-lg">Go Home</button>
+                    </div>
+                  </div>
+                  </form>
+                </dialog>
 
+              <!-- You can open the modal using ID.showModal() method -->
+              <!-- <button class="btn" onclick="my_modal_4.showModal()">open modal</button> -->
+              
             </div>
           </div>
 
